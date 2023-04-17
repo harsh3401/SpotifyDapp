@@ -1,16 +1,19 @@
-import HomePage from "./homepage";
-import Login from "../components/Login";
+import { useContext } from 'react'
+import { SpotifyContext } from '../context/context'
+import Login from '../components/login'
+
 export default function Home() {
+  const { updateProgress, updateVolume } = useContext(SpotifyContext)
   return (
     <div>
       <audio
-        id="audio-element"
+        id='audio-element'
         hidden
         playsInline
-        onVolumeChange={(e) => updateVolume(e)}
-        onTimeUpdate={(e) => updateProgress(e)}
+        onVolumeChange={e => updateVolume(e)}
+        onTimeUpdate={e => updateProgress(e)}
       />
       <Login />
     </div>
-  );
+  )
 }

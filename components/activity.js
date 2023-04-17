@@ -1,3 +1,5 @@
+import Image from 'next/image'
+import friend from '../assets/friend.svg'
 import { activities } from '../data/activities'
 import ActivityCard from './activityCard'
 
