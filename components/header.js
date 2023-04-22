@@ -50,6 +50,7 @@ const Header = ({ setShowUploadMusic }) => {
           src="https://static-cse.canva.com/blob/1039026/1600w-fxYFTKLArdY.jpg"
           width={220}
           height={220}
+          unoptimized
         />
 
         <div className="ml-5">

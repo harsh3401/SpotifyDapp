@@ -1,10 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  output: "export",
   env: {
     REACT_APP_CLUSTER: process.env.REACT_APP_CLUSTER,
   },
   images: {
+    unoptimized: true,
+
     domains: [
       "static-cse.canva.com",
       "kajabi-storefronts-production.kajabi-cdn.com",
