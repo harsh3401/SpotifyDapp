@@ -6,7 +6,7 @@ import Activity from "../components/activity";
 import { useState, useEffect } from "react";
 import UploadModal from "../components/UploadModal";
 import useSpotify from "../hooks/useSpotify";
-import { songs } from "../data/songs";
+// import { songs } from "../data/songs";
 const HomePage = () => {
   const [showUploadMusic, setShowUploadMusic] = useState(false);
   const [title, setTitle] = useState("");
@@ -20,13 +20,13 @@ const HomePage = () => {
     setShowUploadMusic
   );
 
-  // const [songs, setSongs] = useState([]);
+  const [songs, setSongs] = useState([]);
 
-  // useEffect(() => {
-  //   getSongs().then((songs) => {
-  //     setSongs(songs);
-  //   });
-  // }, []);
+  useEffect(() => {
+    getSongs().then((songs) => {
+      setSongs(songs);
+    });
+  }, []);
 
   return (
     <div className="flex">

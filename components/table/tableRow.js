@@ -2,7 +2,6 @@ import { useContext } from "react";
 import { SpotifyContext } from "../../context/context";
 
 const TableRow = ({ props }) => {
-  console.log("Props", props);
   const { playOnSelect } = useContext(SpotifyContext);
 
   return (

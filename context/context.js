@@ -37,7 +37,7 @@ export const SpotifyProvider = ({ children }) => {
   const playOnSelect = (song) => {
     console.log("SOng", song);
     try {
-      document.querySelector("#audio-element").src = song.arweaveLink;
+      document.querySelector("#audio-element").src = song.musicUrl;
       document.querySelector("#audio-element").play();
       setCurrentSong(song);
       setIsPlaying(true);
