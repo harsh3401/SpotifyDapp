@@ -6,6 +6,7 @@ const nextConfig = {
   },
   images: {
     domains: [
+      "static-cse.canva.com",
       "kajabi-storefronts-production.kajabi-cdn.com",
       "upload.wikimedia.org",
       "i.ytimg.com",
