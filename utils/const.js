@@ -1,10 +1,10 @@
-import { clusterApiUrl, PublicKey } from '@solana/web3.js'
-import spotify from './spotify.json'
+import { clusterApiUrl, PublicKey } from "@solana/web3.js";
+import spotify from "./spotify.json";
 
-export const SOLANA_HOST = clusterApiUrl('devnet')
+export const SOLANA_HOST = clusterApiUrl("testnet");
 
 export const STABLE_POOL_PROGRAM_ID = new PublicKey(
-  '5wSMdEYxSW7iB3rdE7c8yB3bqBUrVtvggjDdY5viyDLk',
-)
+  "H23HFE2ZzStCk3fPw7WRMsoCZJ5Sr4aeogU6CAVm7Qtm"
+);
 
-export const STABLE_POOL_IDL = spotify
+export const STABLE_POOL_IDL = spotify;
